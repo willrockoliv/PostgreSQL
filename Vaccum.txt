@@ -1,0 +1,30 @@
+cd\
+
+cd C:\Program Files\PostgreSQL\9.4\bin
+
+set PGUSER=postgres
+
+set PGPASSWORD=postgres
+
+set PGHOST=localhost
+
+set PGDATABASE=autosystem
+
+psql -c "reindex database autosystem" autosystem postgres
+
+
+_________________________________________________________________________________________
+
+cd\
+
+cd C:\Program Files\PostgreSQL\9.4\bin
+
+set PGUSER=postgres
+
+set PGPASSWORD=gerpos17598
+
+set PGHOST=localhost
+
+set PGDATABASE=autosystem
+
+psql -c "vacuum full analyse verbose" autosystem postgres
